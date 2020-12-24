@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond',
+    serif;
+}
+
+body{
+
+    /* second styling option for body color*/
+    /* background-color:  rgba(0, 0, 0, 0.5);
+    color: #000; */
+        color: #fff;
+        background-color: #1c1c25;
+}
+
+.container{
+    margin: 30px 15px;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    /* second styling option for container */
+
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: #bbbbbb;
+    filter: blur(0.2px);
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.425); */
+
+    max-width: 800px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+    filter: blur(0.2px);
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.425);
+}
+
+img{
+    margin: 30px auto;
+    margin-top: 50px;
+    height: 250px;
+    width: 280px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px -8px rgba(0 , 0 , 0, 0.5);
+    border-radius: 50px;
+}
+
+.decs{
+    margin: 40px 30px;
+
+}
+blockquote{
+    font-size: 22px;
+}
+
+
+hr{
+    margin-top: 50px;
+
+}
+
+p{
+    font-size: 20px;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 5px;
+    
+}
+
+.admire{
+    margin-top: 30px;
+    max-width: 370px;
+
+}
+
+
+a{
+    color: greenyellow;
+}
+
+.card-2::before,
+.card::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(#f00, #f0f);
+    border-radius: 50%;
+}
+
+.card-2::before{
+    top: 0%;
+    left: 80%;
+}
+
+.card::before {
+    bottom: -157%;
+    left: -15%;
+    background: linear-gradient(#0098f0, #0457d3);
+}
+
+
+H1{
+    color: greenyellow;
+}
+
+
+/* Media query */
+@media only screen and (min-width: 1200px){
+
+    .container{
+        margin-left: 280px;
+    }
+
+    .decs{
+        margin: 20px 40px;
+    }
+
+    .card-2::before {
+        top: 0%;
+        left: 73%;
+
+    }
+
+    .card::before {
+        bottom: -118%;
+        left: 15%;
+        
+    }
+
+    blockquote {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 23px;
+    }
+}
+
+
